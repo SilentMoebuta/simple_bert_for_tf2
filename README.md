@@ -2,11 +2,11 @@
 Build bert as a keras layer using TF2.0 .
 
 ## Itroduction
-Bert model is build as a Keras Layer.
-merits
-1.Easy to apply bert as a layer in a practical TF2.0 model.
-2.Using only numpy and Tensorflow2.0 as third party packages.
-notes
+Bert model is build as a Keras Layer.  
+merits  
+1.Easy to apply bert as a layer in a practical TF2.0 model.  
+2.Using only numpy and Tensorflow2.0 as third party packages.  
+notes  
 
 ## Files
 ```
