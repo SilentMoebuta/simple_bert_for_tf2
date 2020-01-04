@@ -18,10 +18,11 @@ Notes
   
   
   
-由于想在实际任务中应用bert，找到的bert tensorflow实现让我踩了不少坑，因此动手实现了一个稍微简洁清爽一些的TF2.0 bert。  
-bert继承了keras.layers.Layer类，实际应用时，可以方便地加到keras模型中。  
+由于想在实际任务中应用bert，而找到的bert tensorflow实现又让我踩了不少坑。  
+因此就动手实现了一个稍微简洁清爽一些的TF2.0 bert。  
+这里的bert继承了keras.layers.Layer类，实际应用时，可以方便地加到keras模型中。  
   
-优点：
+优点：  
 1.写成了一个layer，无论是预训练还是finetune，用起来都方便;  
 2.第三方库只用了TF2.0和numpy，你一定能跑起来;  
 3.中文注释拉满，你一定能看懂每一步.  
