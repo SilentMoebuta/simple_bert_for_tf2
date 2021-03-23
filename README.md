@@ -2,7 +2,7 @@
 A bert layer for TF2.0 model.
 
 ## Itroduction
-Bert is build as a TF.Keras Layer.  
+Bert is built as a TF.Keras Layer.  
   
 Merits  
 1.Easy to apply bert as a layer in a practical TF2.0 model.  
@@ -20,7 +20,8 @@ Notes
   
 由于想在实际任务中应用bert，而找到的bert tensorflow实现又让我踩了不少坑。  
 因此就动手实现了一个稍微简洁清爽一些的TF2.0 bert。  
-这里的bert继承了keras.layers.Layer类，实际应用时，可以方便地加到keras模型中。  
+这里的bert继承了keras.layers.Layer类，实际应用时，可以方便地加到keras模型中。
+只是打算跑个bert模型的话，建议直接用huggingface的Transformers，自己动手搭建更多还是为了弄清bert内部的结构。
   
 优点：  
 1.写成了一个layer，无论是预训练还是finetune，用起来都方便;  
