@@ -4,11 +4,11 @@ A bert layer for TF2.0 model.
 ## Itroduction
 Bert is built as a TF.Keras Layer.  
   
-Merits  
+## Merits  
 1.Easy to apply bert as a layer in a practical TF2.0 model.  
 2.Using only numpy and Tensorflow2.0 as third party packages.  
   
-Notes  
+## Notes  
 1.Comments are writen in Chinese.  
 2.Dropout are removed according to the study of ALBERT.  
 3.Transformer Block weights are shared cross layers according to ALBERT.  
@@ -17,18 +17,18 @@ Notes
 6.Vocab.txt is squeezed for a certain project.  
   
 --------------------------------------------
-  
+## 简介
 由于想在实际任务中应用bert，而找到的bert tensorflow实现又让我踩了不少坑。  
 因此就动手实现了一个稍微简洁清爽一些的TF2.0 bert。  
 这里的bert继承了keras.layers.Layer类，实际应用时，可以方便地加到keras模型中。
 只是打算跑个bert模型的话，建议直接用huggingface的Transformers，自己动手搭建更多还是为了弄清bert内部的结构。
   
-优点：  
+## 优点：  
 1.写成了一个layer，无论是预训练还是finetune，用起来都方便;  
 2.第三方库只用了TF2.0和numpy，你一定能跑起来;  
 3.中文注释拉满，你一定能看懂每一步.  
 
-注意：  
+## 注意：  
 1.根据ALBER的研究，移除了dropout;  
 2.根据ALBERT的研究，transformer层之间的参数共享（不共享效果好一点，共享后模型体积小，Inference time其实是一样的）;  
 3.根据ELECTRA的研究，预训练时考虑没被mask的单词的损失可以加速模型效果提升（ELECTRA中是判断字符是否被替换），本项目中的loss也是由mlm loss和un-mask单词的loss两部分组成的。如觉不妥，可以直接在pretrain文件的loss定义里将后半部分的loss删去;  
