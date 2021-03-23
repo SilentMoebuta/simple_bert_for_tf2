@@ -16,7 +16,7 @@ Notes
 5.No pretrained model language model provided here.  
 6.Vocab.txt is squeezed for a certain project.  
   
-  
+--------------------------------------------
   
 由于想在实际任务中应用bert，而找到的bert tensorflow实现又让我踩了不少坑。  
 因此就动手实现了一个稍微简洁清爽一些的TF2.0 bert。  
