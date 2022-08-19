@@ -1,5 +1,8 @@
 # simple_bert_for_tf2
 A bert layer for TF2.0 model.
+This model is just for understanding the structure of BERT or Transformer layer.
+It can deal with some simple tasks.
+But recommend using huggingface bert as a keras layer to your own model so that you can use the well pretrained weights.
 
 ## Itroduction
 Bert is built as a TF.Keras Layer.  
