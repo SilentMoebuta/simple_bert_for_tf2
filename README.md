@@ -4,7 +4,7 @@ This model is just for understanding the structure of BERT or Transformer layer.
 It can deal with some simple tasks.
 But recommend using huggingface bert as a keras layer to your own model so that you can use the well pretrained weights.
 
-## Itroduction
+## Introduction
 Bert is built as a TF.Keras Layer.  
   
 ## Merits  
